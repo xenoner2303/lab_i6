@@ -3,14 +3,16 @@
 
 <head>
     <title>lab4.1</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="Ruban_4.1.css"/>   
+    <link type="text/css" rel="stylesheet" href="color-picker.css"/> 
 </head>
 
 <body>
+    <div class="color-picker-container"></div>
     <div id="gamesTopic" class="listTopics">
         <span class="titleText">Мої улюблені ігри</span>
     </div>
-    <ol id="gamesList" class="listOfFavorites">
+    <ol id="gamesList" class="listOfFavorites games-list ">
         <li title="Гра, яка примушує тебе читати книгу">Disco Elysium</li>
         <li title="Гра, яка примушує тебе страждати">Stalker OP2.2</li>
         <li title="Гра, яка примушує тебе навчитися адаптуватися">Rimworld</li>
@@ -21,7 +23,7 @@
     <div id="mediaTopic" class="listTopics">
         <span class="titleText">Мої улюблені фільми/серіали/аніме</span>
     </div>
-    <ol id="mediaList" class="listOfFavorites">
+    <ol id="mediaList" class="listOfFavorites media-list">
         <li title="Перший фільм з серії">Голий пістолет</li>
         <li title="Другий фільм з серії">Голий пістолет 2&#189;: Запах страху</li>
         <li title="Третій фільм з серії">Голий пістолет 33&#8531;: Остання образа</li>
@@ -37,7 +39,7 @@
     <div id="itemsTopic" class="listTopics">
         <span class="titleText">Мої улюблені навчальні дисципліни</span>
     </div>
-    <dl id="esubjectDataList" class="listOfFavorites">
+    <dl id="esubjectDataList" class="listOfFavorites subjects-list">
         <dt>Цифрова стеганографія</dt>
         <dd>Дисципліна з вивчання способів реалізації прихованної передачі інформації у цифрових об'єктах, де
             приховуєтсья сам факт передачі. Саме тут можна відчути себе шпигуном та трошки тупим одночасно.</dd>
@@ -49,6 +51,7 @@
         <dt>Мультимедійні, ігрові та розважальні системи</dt>
         <dd>Дисципліна з вивчання різних аспектів процесу розробки ігор (хто не мріяв створити свою гру?)</dd>
     </dl>
+    <script src="color-picker.js"></script>
 </body>
 
 </html>

@@ -73,17 +73,17 @@ body {
     background-color: rgba(103, 103, 103, 0.5);
 }
 
-/* у першому списку кожний другий елемент*/
+/* у першому списку кожний другий елемент
 #gamesList li:nth-child(2n) {
     background-color: aquamarine;
 }
 
-/* у другому - кожен третій, починаючи з другого*/
+у другому - кожен третій, починаючи з другого
 #mediaList li:nth-child(3n+2) {
     background-color: aquamarine;
 }
 
-/* у третьому - перший та останній*/
+ у третьому - перший та останній
 #esubjectDataList dt:first-child,
 #esubjectDataList dt:first-child+dd {
     background-color: aquamarine;
@@ -92,4 +92,4 @@ body {
 #esubjectDataList dt:last-of-type,
 #esubjectDataList dd:last-child {
     background-color: aquamarine;
-}
+} */
