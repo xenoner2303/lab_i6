@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolidayTime - Бронювання будиночка в Карпатах</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="Logo.png" alt="HolidayTime Logo" class="logo-placeholder">
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-item">ГОЛОВНА</a>
+                <a href="about.html" class="nav-item">ПРО НАС</a>
+                <a href="booking.html" class="nav-item active">ЗАБРОНЮВАТИ</a>
+                <a href="contacts.html" class="nav-item">КОНТАКТИ</a>
+                <a href="profile.html" class="nav-item">ОСОБИСТИЙ КАБІНЕТ</a>
+            </nav>
+
+            <div class="lang-selector-wrapper">
+                <div class="lang-icon">🌐</div>
+                <select class="lang-select">
+                    <option value="ua" selected>UA</option>
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-title-strip">
+        <div class="title-strip-container">
+            <h2>Бронювання будиночка в Карпатах</h2>
+        </div>
+    </div>
+
+    <main class="content-wrapper details-page-wrapper">
+        <div class="back-button-row">
+            <a href="booking.html" class="btn-back">
+                <span class="back-arrow">←</span> Назад
+            </a>
+        </div>
+
+        <section class="gallery-description-section">
+            <div class="gallery-left">
+                <div class="main-house-img">
+                    </div>
+                <div class="long-interior-img">
+                    </div>
+            </div>
+            
+            <div class="gallery-right">
+                <div class="house-description-text">
+                    <p>Затишні дерев'яні будиночки, які заховались на окраїні лісу, зустрічатимуть Вас чудовим краєвидом на ранкові полонини.</p>
+                    <p>Ви можете обрати кількість кімнат та місце, яке буде ідеальним для Вас. Територія, на якій базуються будиночки, підійде як і для великих компаній, яким потрібно бути поряд у декількох будинках, так і для пар, які хочуть бути на одинці.</p>
+                </div>
+                <div class="small-images-row">
+                    <div class="small-img">
+                        </div>
+                    <div class="small-img">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="availability-section">
+            <h3 class="section-main-title">Наявність місць</h3>
+            
+            <div class="availability-card">
+                <p class="availability-prompt">Коли б Ви хотіли зупинись в помешканні Полонини Карпат?</p>
+                
+                <form class="availability-form" onsubmit="return false;">
+                    <div class="form-inputs-grid">
+                        <div class="date-inputs-row">
+                            <div class="details-form-group">
+                                <label>Дата заїзду</label>
+                                <div class="input-with-icon">
+                                    <span class="calendar-icon">📅</span>
+                                    <input type="text" placeholder="Дата заїзду" class="details-input">
+                                    <span class="select-arrow">▼</span>
+                                </div>
+                            </div>
+                            
+                            <div class="details-form-group">
+                                <label>Дата виїзду</label>
+                                <div class="input-with-icon">
+                                    <span class="calendar-icon">📅</span>
+                                    <input type="text" placeholder="Дата виїзду" class="details-input">
+                                    <span class="select-arrow">▼</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="numbers-inputs-row">
+                            <div class="number-group">
+                                <label>Номери</label>
+                                <input type="number" value="1" min="1" class="details-number-input">
+                            </div>
+                            <div class="number-group">
+                                <label>Дорослі</label>
+                                <input type="number" value="2" min="1" class="details-number-input">
+                            </div>
+                            <div class="number-group">
+                                <label>Діти</label>
+                                <input type="number" value="0" min="0" class="details-number-input">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="btn-check-availability">Перевірити наявність вільних місць</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="pricing-table-section">
+            <div class="pricing-table">
+                <div class="table-header">
+                    <div class="th-col col-capacity">Вміщує</div>
+                    <div class="th-col col-type">Тип розміщення</div>
+                    <div class="th-col col-price">Ціна</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="td-col col-capacity">
+                        <div class="people-icons">
+                            <span class="fallback-icon">👥</span>
+                        </div>
+                    </div>
+                    
+                    <div class="td-col col-type">
+                        <p class="room-main-title">Двомісний номер</p>
+                        <div class="room-beds-detail">
+                            <p>1 широке двоспальне ліжко</p>
+                            <div class="bed-icon-wrapper">
+                                <span class="fallback-icon">🛏️</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="td-col col-price">
+                        <button type="button" class="btn-show-prices">Показати ціни</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll-top-btn">
+            <span>↑</span>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2021 HolidayTime. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

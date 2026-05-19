@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+            td {
+                height: 50px;
+                width: 50px;
+                position: relative;
+                text-align: center;
+                vertical-align: middle;
+            }
+            p.piece {
+                margin: 0;
+                font-size: 50px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            p.tag {
+                margin: 0;
+                font-size: small;
+                position: absolute;
+            }
+            p.vertical_sign {
+                top: 2px; 
+                left: 2px; 
+            }
+            p.horizontal_sign {
+                bottom: 2px;
+                right: 2px;
+            }
+            tr:nth-child(odd) td:nth-child(odd),
+            tr:nth-child(even) td:nth-child(even) {
+                background-color: rgb(187, 224, 160);
+            }
+            tr:nth-child(odd) td:nth-child(even),
+            tr:nth-child(even) td:nth-child(odd) {
+                background-color: rgb(96, 141, 83);
+            }
+        </style>
+</head>
+
+<body>
+    <table align="center" border="1" cellspacing="0" cellpadding="5" size="100%">
+        <caption><h1>Chess</h1></caption>
+        <tr>
+            <td><p class="vertical_sign tag">8</p></td>
+            <td><p class="piece">♚</p></td>
+            <td></td>
+            <td><p class="piece">♜</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><p class="vertical_sign tag">7</p><p class="piece">♟</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><p class="vertical_sign tag">6</p></td>
+            <td><p class="piece">♟</p></td>
+            <td><p class="piece">♕</p></td>
+            <td></td>
+            <td></td>
+            <td><p class="piece">♔</p></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><p class="vertical_sign tag">5</p><p class="piece">♜</p></td>
+            <td></td>
+            <td><p class="piece">♘</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><p class="vertical_sign tag">4</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><p class="vertical_sign tag">3</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><p class="vertical_sign tag">2</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><p class="vertical_sign tag">1</p><p class="horizontal_sign tag">a</p></td>
+            <td><p class="horizontal_sign tag">b</p></td>
+            <td><p class="horizontal_sign tag">c</p></td>
+            <td><p class="horizontal_sign tag">d</p></td>
+            <td><p class="horizontal_sign tag">e</p></td>
+            <td><p class="horizontal_sign tag">f</p></td>
+            <td><p class="horizontal_sign tag">g</p></td>
+            <td><p class="horizontal_sign tag">h</p></td>
+        </tr>
+            
+    </table>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body bgcolor="#f4f4f4">
+    <form action="file.php" method="post" accept-charset="utf-8">
+
+        <table width="100%" border="1" bgcolor="#ffffff">
+            <tr>
+                <td width="160">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2416/2416471.png" width="150" height="150" onclick="alert('Не тицяй тут >;|')">
+                </td>
+                <td align="center">
+                    Найновіше, <b>гіперкруте</b>, <i>хайпове</i>, <font color="red" size="5">потужне</font> опитування для студентів некомерційного підприємства Національний університет "Київський авіаційний інститут"
+                </td>
+            </tr>
+        </table>
+
+        <table width="100%">
+            <tr>
+                <td width="50" rowspan="2"></td>
+                <td colspan="2" bgcolor="#ffffff">
+                    <fieldset>
+                        <legend>
+                            1 <font color="red">*</font>
+                        </legend>
+
+                        <label for="PIBInput">
+                            Введіть ваш ПІБ:
+                        </label>
+
+                        <input id="PIBInput" type="text" required placeholder="Віктор Вікторович Ющенко" pattern="\w+ \w+ \w+">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            2 <font color="red">*</font>
+                        </legend>
+
+                        <label for="emailInput">
+                            Введіть ваш email:
+                        </label>
+
+                        <input id="emailInput" type="email" required placeholder=" myname@example.com">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            3 <font color="red">*</font>
+                        </legend>
+
+                        <label for="birthdayInput">
+                            Введіть дату вашого народження:
+                        </label>
+
+                        <input id="birthdayInput" required type="date">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            4
+                        </legend>
+
+                        <label for="colorInput">
+                            Колір ваших очей:
+                        </label>
+
+                        <input id="colorInput" type="color" value="brown">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            5 <font color="red">*</font>
+                        </legend>
+
+                        <label for="colorInput">
+                            Що ви думаєте о міграції середноземних лелек?
+                        </label>
+
+                        <br>
+
+                        <textarea rows="5" cols="50" required>please input smt here ...</textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            6
+                        </legend>
+
+                        Який ваш улюблений корпус?
+
+                        <select name="buildingSelect">
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                            <option value="7"> 7 </option>
+                            <option value="8"> 8 </option>
+                            <option value="9"> 9 </option>
+                            <option value="10"> 10 </option>
+                            <option value="11"> 11 </option>
+                            <option value="-1"> Кулиничі </option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            7 <font color="red">*</font>
+                        </legend>
+
+                        <table>
+                            <tr>
+                                <td valign="top">
+                                    <img src="https://kor.ill.in.ua/m/1260x900/2507612.jpg" height="150" width="150" alt="Мавпа">
+                                </td>
+
+                                <td valign="top">
+                                    <table>
+                                        <tr>
+                                            <td>Хто це на зображенні?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" checked id="monkeyCheck1" name="monkeyCheck">
+                                                <label for="monkeyCheck1">Мавпа</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" id="monkeyCheck2" name="monkeyCheck">
+                                                <label for="monkeyCheck2">Собака</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" id="monkeyCheck3" name="monkeyCheck">
+                                                <label for="monkeyCheck3">Бджола</label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            8
+                        </legend>
+                        В які ігри ви грали останній раз на парі?
+
+                        <br>
+                        <input type="checkbox" id="gameCheck1">
+                        <label for="gameCheck1">Геншин</label>
+
+                        <br>
+
+                        <input type="checkbox" id="gameCheck2">
+                        <label for="gameCheck2">Альбіон онлайн</label>
+                        <br>
+
+                        <input type="checkbox" id="gameCheck2">
+                        <label for="gameCheck3">Дурень онлайн</label>
+                        <br>
+
+                        <input type="checkbox" id="gameCheck2">
+                        <label for="gameCheck4">Інше</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            9 <font color="red">*</font>
+                        </legend>
+                        Оцініть наше опитування:
+                        <input type="number" value="100" min="100" max="100" required>
+                    </fieldset>
+                </td>
+
+                <td rowspan="3" width="50"></td>
+            </tr>
+
+            <tr>
+                <td align="left" colspan="2">
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

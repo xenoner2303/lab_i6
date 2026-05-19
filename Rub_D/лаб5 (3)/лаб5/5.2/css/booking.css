@@ -1,0 +1,118 @@
+.locationSelect{
+  width: 100%;
+  padding: 10px 0;
+
+  cursor: pointer;
+  background-color: #E8E8E8;
+
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.61);
+  text-align: center;
+
+  appearance: none;
+  background-image: url("../images/selectArrow.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 40px;
+}
+
+.locationSelect option{
+  background-color: rgba(163, 165, 169, 0.97);
+
+  font-size: 32px;
+  color: #292A31;
+  font-style: italic;
+}
+
+.chooseBlock {
+  width: 100%;
+  height: 412px;
+  padding: 40px 60px;
+
+  position: relative;
+
+  background-color: #BDBDC6;
+  color: #353C57;
+  
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.chooseImage {
+  width: 33%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.chooseDescription{
+  height: 100%;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.chooseName{
+  width: 100%;
+  margin-bottom: 10px;
+
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+
+  border-bottom: 3px white solid;
+}
+
+.chooseText {
+  width: 100%;
+  padding: 0 50px;
+
+  flex: 1;
+
+  background-color: #D7D7DD;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 22px;
+}
+
+.viewButton {
+  position: absolute;
+  bottom: 5px;
+  right: -40px;
+
+  padding: 15px 30px;
+
+  background-color: #202846;
+  color: white;
+
+  border-radius: 30px;
+  font-size: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.favoriteChoose{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  width: 50px;
+  height: 50px;
+
+  appearance: none;
+  background-image: url("../images/unactiveStar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.favoriteChoose:checked{
+  background-image: url("../images/activeStar.png");
+}

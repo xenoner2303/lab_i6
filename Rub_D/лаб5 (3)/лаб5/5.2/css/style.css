@@ -1,0 +1,180 @@
+.logoText{
+  width: 100%;
+  height: 469px;
+
+  background-image: url('../images/logoback.png');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.companyName{
+  font-size: 75px;
+}
+
+.previewBlock{
+  width: 100%;
+  height: 604px;
+
+  background-image: url('../images/prewiev.png');
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.nextArrow {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.descriptionBox {
+  width: 70%;
+  padding: 30px 40px;
+
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.descriptionText {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.viewButton {
+  position: absolute;
+  right: 40px;
+  top: -25px;
+
+  background-color: #202846;
+  color: white;
+
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 24px;
+}
+
+.paginationDots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+
+  background-color: #215023;
+
+  border-radius: 50%;
+}
+
+#activeDot {
+  background-color: #A5BB4F;
+}
+
+.agitationBlock {
+  width: 100%;
+  height: 412px;
+  padding: 40px; 
+
+  background-color: #C1C1C3;
+  
+  display: flex;
+  gap: 20px;
+}
+
+.agitationImage {
+  height: 100%;
+  
+  flex: 1;
+  min-width: 0; 
+
+  object-fit: cover;
+}
+
+.agitationText {
+  height: 100%;
+  padding: 0 50px;
+  
+  flex: 1;
+
+  background-color: #EAEAEB;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 26px;
+}
+
+.feedBack {
+  width: 518px;
+  padding-top: 30px;
+
+  background-color: #EFEEEE;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedBackTitle {
+  margin-bottom: 25px;
+  padding: 0 40px;
+
+  font-size: 36px;
+  color: #414141;
+}
+
+.inputGroup {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.inputGroup input {
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  border: 2px solid #90A4AE;
+  background-color: white;
+  font-size: 20px;
+}
+
+.feedBackSubmit {
+  width: 100%;
+  height: 80px;
+
+  background-color: #444765;
+  color: white;
+
+  font-size: 36px;
+  cursor: pointer;
+}

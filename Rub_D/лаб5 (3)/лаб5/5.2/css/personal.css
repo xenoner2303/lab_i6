@@ -1,0 +1,93 @@
+.main{
+  padding: 60px 15%;
+}
+
+.personalInformation{
+  width: 100%;
+  padding: 40px 40px 40px 60px;
+
+  background-color: #BDBDC6;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.avatarMenu{
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.userAvatar{
+  width: 196px;
+  height: 196px;
+
+  border-radius: 50%;
+}
+
+.mainInformation{
+  flex: 2;
+}
+
+.mainInformationLine{
+  font-size: 36px;
+  font-style: italic;
+  font-weight: bold;
+
+  color: #353C57;
+
+  border-bottom: 3px white solid;
+  margin-bottom: 20px;
+}
+
+.mainInformationLine:nth-child(5n){
+  border-bottom: none;
+}
+
+.currentInformationText{
+  font-weight: normal;
+}
+
+.informationMenuButton{
+  padding: 10px 60px;
+
+  color: white;
+
+  border-radius: 30px;
+}
+
+#changeAvatarButton{
+  background-color: #69749B;
+
+  font-size: 24px;
+}
+
+#changeAvatarButton:hover{
+  background-color: #4b5577;
+}
+
+#settingsButton{
+  background-color: #484A54;
+
+  font-size: 24px;
+}
+
+#settingsButton:hover{
+  background-color: rgb(37, 44, 65)
+}
+
+#exitButton{
+  padding: 10px 60px;
+
+  background-color: #202846;
+
+  font-size: 27px;
+}
+
+#exitButton:hover{
+  background-color: #0f1322;
+}

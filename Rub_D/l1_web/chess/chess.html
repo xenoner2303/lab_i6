@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <script src="chess_logic.js"></script>
+</head>
+
+<body>
+    <table width="100%" height="100%" border="1" bordercolor="black">
+        <tr>
+            <td colspan="2" rowspan="12" align="right">
+                <table border="1" bgcolor="#fcd5a4" id="whiteOff">
+                    <tr height="50" align="center">
+                        <td width="50" id="whiteOff00"></td>
+                        <td width="50" id="whiteOff01"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="whiteOff10"></td>
+                        <td id="whiteOff11"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="whiteOff20"></td>
+                        <td id="whiteOff21"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="whiteOff30"></td>
+                        <td id="whiteOff31"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="whiteOff40"></td>
+                        <td id="whiteOff41"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="whiteOff50"></td>
+                        <td id="whiteOff51"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="whiteOff60"></td>
+                        <td id="whiteOff61"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="whiteOff70"></td>
+                        <td id="whiteOff71"></td>
+                    </tr>
+                </table>
+            </td>
+
+            <td colspan="10" height="65"></td>
+
+            <td colspan="2" rowspan="12" align="left">
+                <table border="1" bgcolor="#e03636" id="blackOff">
+                    <tr height="50" align="center">
+                        <td width="50" id="blackOff00"></td>
+                        <td width="50" id="blackOff01"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="blackOff10"></td>
+                        <td id="blackOff11"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="blackOff20"></td>
+                        <td id="blackOff21"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="blackOff30"></td>
+                        <td id="blackOff31"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="blackOff40"></td>
+                        <td id="blackOff41"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="blackOff50"></td>
+                        <td id="blackOff51"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="blackOff60"></td>
+                        <td id="blackOff61"></td>
+                    </tr>
+
+                    <tr height="50" align="center">
+                        <td id="blackOff70"></td>
+                        <td id="blackOff71"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr height="30" align="center" bgcolor="#db693b">
+            <td width="30"></td>
+            <td width="50">A</td>
+            <td width="50">B</td>
+            <td width="50">C</td>
+            <td width="50">D</td>
+            <td width="50">E</td>
+            <td width="50">F</td>
+            <td width="50">G</td>
+            <td width="50">H</td>
+            <td width="30"></td>
+        </tr>
+
+        <tr height="50" align="center">
+            <td bgcolor="#db693b">8</td>
+            <td id="A8" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9820;</font>
+            </td>
+            <td id="B8" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9822;</font>
+            </td>
+            <td id="C8" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9821;</font>
+            </td>
+            <td id="D8" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9819;</font>
+            </td>
+            <td id="E8" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9818;</font>
+            </td>
+            <td id="F8" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9821;</font>
+            </td>
+            <td id="G8" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9822;</font>
+            </td>
+            <td id="H8" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9820;</font>
+            </td>
+            <td bgcolor="#db693b">8</td>
+        </tr>
+
+        <tr height="50" align="center">
+            <td bgcolor="#db693b">7</td>
+            <td id="A7" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9823;</font>
+            </td>
+            <td id="B7" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9823;</font>
+            </td>
+            <td id="C7" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9823;</font>
+            </td>
+            <td id="D7" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9823;</font>
+            </td>
+            <td id="E7" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9823;</font>
+            </td>
+            <td id="F7" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9823;</font>
+            </td>
+            <td id="G7" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9823;</font>
+            </td>
+            <td id="H7" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9823;</font>
+            </td>
+            <td bgcolor="#db693b">7</td>
+        </tr>
+
+        <tr height="50" align="center">
+            <td bgcolor="#db693b">6</td>
+            <td id="A6" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="B6" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="C6" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="D6" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="E6" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="F6" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="G6" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="H6" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td bgcolor="#db693b">6</td>
+        </tr>
+        <tr height="50" align="center">
+            <td bgcolor="#db693b">5</td>
+            <td id="A5" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="B5" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="C5" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="D5" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="E5" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="F5" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="G5" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="H5" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td bgcolor="#db693b">5</td>
+        </tr>
+        <tr height="50" align="center">
+            <td bgcolor="#db693b">4</td>
+            <td id="A4" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="B4" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="C4" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="D4" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="E4" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="F4" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="G4" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="H4" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td bgcolor="#db693b">4</td>
+        </tr>
+        <tr height="50" align="center">
+            <td bgcolor="#db693b">3</td>
+            <td id="A3" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="B3" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="C3" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="D3" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="E3" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="F3" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td id="G3" bgcolor="#fcd5a4" onclick="clickSquare(this.id)"></td>
+            <td id="H3" bgcolor="#e03636" onclick="clickSquare(this.id)"></td>
+            <td bgcolor="#db693b">3</td>
+        </tr>
+
+        <tr height="50" align="center">
+            <td bgcolor="#db693b">2</td>
+            <td id="A2" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9817;</font>
+            </td>
+            <td id="B2" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9817;</font>
+            </td>
+            <td id="C2" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9817;</font>
+            </td>
+            <td id="D2" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9817;</font>
+            </td>
+            <td id="E2" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9817;</font>
+            </td>
+            <td id="F2" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9817;</font>
+            </td>
+            <td id="G2" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9817;</font>
+            </td>
+            <td id="H2" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9817;</font>
+            </td>
+            <td bgcolor="#db693b">2</td>
+        </tr>
+
+        <tr height="50" align="center">
+            <td bgcolor="#db693b">1</td>
+            <td id="A1" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9814;</font>
+            </td>
+            <td id="B1" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9816;</font>
+            </td>
+            <td id="C1" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9815;</font>
+            </td>
+            <td id="D1" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9813;</font>
+            </td>
+            <td id="E1" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9812;</font>
+            </td>
+            <td id="F1" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9815;</font>
+            </td>
+            <td id="G1" bgcolor="#fcd5a4" onclick="clickSquare(this.id)">
+                <font size="6">&#9816;</font>
+            </td>
+            <td id="H1" bgcolor="#e03636" onclick="clickSquare(this.id)">
+                <font size="6">&#9814;</font>
+            </td>
+            <td bgcolor="#db693b">1</td>
+        </tr>
+
+        <tr height="30" align="center" bgcolor="#db693b">
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td colspan="10" height="64">
+                <textarea rows="3" cols="68" id="gameLog" readonly>старт</textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

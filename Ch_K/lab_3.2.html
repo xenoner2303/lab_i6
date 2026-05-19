@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header style="text-align: center;">
+    <h1>Опитування студентів НУ"КАІ"</h1>
+    <p>Задоволеність студентів навчальним процесом</p>
+    </header>
+    <form name="basicinfo">
+        <label for="fullname">Name</label><br><br>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Second Name" required><br>
+        <br>
+        <label for="email">E-mail</label><br><br>
+        <input type="email" placeholder="example@example.com" required><br>
+        <br>
+        <label for="telnum">Telephone number</label><br><br>
+        <input type="tel" value="+380" placeholder="+380*********" required><br>
+    </form>
+    <br>
+    <form name="generalinfo">
+        <label for="course" required>Course</label>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+        </select>
+        <br><br>
+        <label for="faculty" required>Faculty</label>
+        <select>
+            <option>ФНЗ</option>
+            <option>ФАБД</option>
+            <option>АКД</option>
+            <option>ГМФ</option>
+            <option>ФМФМ</option>
+            <option>ФКНТ</option>
+            <option>ФПМВ</option>
+            <option>ФТЛ</option>
+            <option>ФАЕТ</option>
+        </select>
+        <br><br>
+        <form>
+        <label for="educationform" name="eduform">Education Form</label><br><br>
+        <input type="radio" id="full-time" name="eduform" required>
+        <label for="full-time">Full-time</label>
+        <input type="radio" id="part-time" name="eduform">
+        <label for="part-time">Part-time</label>
+        </form>
+        <br>
+    </form>
+    <form name="neededinfo">
+        <label for="preferance" name="preferance">What do you like the most in education?</label><br><br>
+        <input type="checkbox" name="preferance" required><label for=preferance name="preferance">Tutors</label><br>
+        <input type="checkbox" name="preferance"><label for=preferance name="preferance">Subjects</label><br>
+        <input type="checkbox" name="preferance"><label for=preferance name="preferance">Vibe</label><br>
+        <input type="checkbox" name="preferance"><label for=preferance name="preferance">Practical Exercises</label><br>
+        <input type="checkbox" name="preferance"><label for=preferance name="preferance">Other</label><br>
+        <br>
+        <label for="Propositions">Your propositions for upgrading education proccess:</label>
+        <textarea rows="10" cols="90">It would be nice to </textarea>
+    </form>
+    <button type="submit">Submit</button>
+</body>
+</html>

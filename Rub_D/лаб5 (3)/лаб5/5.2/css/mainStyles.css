@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  background: none;
+
+  font-family: 'PT Sans';
+}
+
+body{
+  background-color: #DCDCDC;
+}
+
+header, footer{
+  width: 100%;
+  height: 90px;
+
+  padding: 10px 20px 10px 40px;
+  background-color: #202846;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer{
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 36px;
+
+  display: flex;
+  align-items: center;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mountainButton {
+  width: 178px;
+  height: 70px;
+    
+  background-color: white;
+
+  border-radius: 30px;
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mountainIcon {
+  height: 60%;
+  width: auto;
+}
+
+.navigationMenu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigationMenu *{
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+
+  text-align: center;
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuLinkButton{
+  width: 170px;
+  height: 50px;
+
+  border-right: 2px white solid;
+}
+
+.menuLinkButton:hover{
+  background-color: #151c34;
+}
+
+.langSelect {
+  appearance: none;
+  font-size: 28px;
+}
+
+.langSelect option{
+  background-color: #202846;
+}
+
+.main{
+  width: 100%;
+  padding: 20px 11%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pagelabel{
+  width: 100%;
+  height: 140px;
+  padding: 0 12%;
+
+  background-color: #C6C6DC;
+
+  font-size: 48px;
+  font-style: italic;
+  color: 202846;
+
+  display: flex;
+  align-items: center;
+}
+
+.toTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  
+  width: 101px;
+  height: 101px;
+  background-color: rgba(85, 87, 104, 0.62);
+  color: white;
+  
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.toTop:hover {
+  background-color: #343949;
+}

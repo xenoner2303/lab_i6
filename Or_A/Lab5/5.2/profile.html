@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolidayTime - Особистий кабінет</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="Logo.png" alt="HolidayTime Logo" class="logo-placeholder">
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-item">ГОЛОВНА</a>
+                <a href="about.html" class="nav-item">ПРО НАС</a>
+                <a href="booking.html" class="nav-item">ЗАБРОНЮВАТИ</a>
+                <a href="contacts.html" class="nav-item">КОНТАКТИ</a>
+                <a href="profile.html" class="nav-item active">ОСОБИСТИЙ КАБІНЕТ</a>
+            </nav>
+
+            <div class="lang-selector-wrapper">
+                <div class="lang-icon">🌐</div>
+                <select class="lang-select">
+                    <option value="ua" selected>UA</option>
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-title-strip">
+        <div class="title-strip-container">
+            <h2>Особистий кабінет</h2>
+        </div>
+    </div>
+
+    <main class="content-wrapper profile-page-wrapper">
+
+        <section class="profile-card">
+            
+            <div class="profile-avatar-side">
+                <div class="avatar-circle">
+                    <span class="fallback-user-icon">👤</span>
+                </div>
+                <div class="avatar-actions">
+                    <button type="button" class="btn-change-avatar">Змінити аватар</button>
+                    <button type="button" class="btn-settings">Налаштування</button>
+                </div>
+            </div>
+            
+            <div class="profile-info-side">
+                <div class="info-row name-row">
+                    <p>Петров Іван Іванович</p>
+                </div>
+                <div class="info-row">
+                    <p><strong>Стать:</strong> чоловіча</p>
+                </div>
+                <div class="info-row">
+                    <p><strong>Дата народження:</strong> 10. 02. 1998</p>
+                </div>
+                <div class="info-row">
+                    <p><strong>Мобільний телефон:</strong> +38(097)346-72-50</p>
+                </div>
+                <div class="info-row last-info-row">
+                    <p><strong>Ел. пошта:</strong> petrov@gmail.com</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="logout-row">
+            <button type="button" class="btn-logout">Вийти</button>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2021 HolidayTime. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

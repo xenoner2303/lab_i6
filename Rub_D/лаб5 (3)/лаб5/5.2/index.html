@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HolidayTime</title>
+    <link rel="icon" type="image/x-icon" href="./images/mountain.png">
+    <link type="text/css" rel="stylesheet" href="./css/mainStyles.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/style.css"/>
+</head>
+
+<body>
+   <header>
+        <a href="#" class="mountainButton">
+            <img class="mountainIcon" src="./images/mountain.png">
+        </a>
+        
+        <div class="navigationMenu">
+            <a href="#" class="menuLinkButton">Головна</a>
+            <a href="AboutUs.html" class="menuLinkButton">Про нас</a>
+            <a href="booking.html" class="menuLinkButton">Забронювати</a>
+            <a href="contacts.html" class="menuLinkButton">Контакти</a>
+            <a href="personal.html" class="menuLinkButton">Особистий кабінет</a>
+
+            <div class="selectWrap">
+                <img class="globusLang" src="./images/globus.png">
+                <select class="langSelect">
+                    <option>UA</option>
+                    <option>FR</option>
+                    <option>EN</option>
+                </select>
+            </div>
+        </div>
+   </header>
+
+    <div class="main">
+        <p class="logoText">
+            <span class="companyName">HolidayTime</span>
+            Автентичний відпочинок серед українського колориту!
+        </p>
+        
+        <a href="#" class="toTop">&#8593;</a>
+        
+        <div class="previewBlock">
+            <div class="nextArrow">&#10095;</div>
+
+            <div class="descriptionBox">
+                <p class="descriptionText">
+                    Полонини Карпат, у селі Орів посеред гір розташувався затишний куточок для незабутніх вражень. Справжні українські гори, власноручне сироваріння на полонині, водоспади та вікові дерева чекають на Вас.
+                </p>
+                <a href="bookingHouse.html" class="viewButton">Переглянути &rarr;</a>
+                
+                <div class="paginationDots">
+                    <span id="activeDot" class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="agitationBlock">
+            <img class="agitationImage" src='./images/agitation.png'>
+            <p class="agitationText">Активний відпочинок у нетипових лоцаціях. Незаймана природа та місцевий колорит подарують Вам незабутні враження.</p>
+        </div>
+
+        <form class="feedBack" action="hahaFile.php" method="post">
+            <p class="feedBackTitle">Зворотній зв'язок</p>
+            
+            <div class="inputGroup">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" required placeholder="Введіть ім'я">
+            </div>
+
+            <div class="inputGroup">
+                <label for="phone">Номер телефону</label>
+                <input type="text" id="phone" name="phone" required placeholder="Введіть номер телефону">
+            </div>
+
+            <input class="feedBackSubmit" type="submit" value="Запросити виклик">
+        </form>
+    </div>
+
+    <footer>
+        © 2021 HolidayTime.  All rights reserved.
+    </footer>
+</body>
+
+</html>

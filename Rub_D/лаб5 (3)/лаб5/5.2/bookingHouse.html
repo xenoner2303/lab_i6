@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HolidayTime</title>
+    <link rel="icon" type="image/x-icon" href="./images/mountain.png">
+    <link type="text/css" rel="stylesheet" href="./css/mainStyles.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/bookingHouse.css"/>
+</head>
+
+<body>
+   <header>
+        <a href="index.html" class="mountainButton">
+            <img class="mountainIcon" src="./images/mountain.png">
+        </a>
+        
+        <div class="navigationMenu">
+            <a href="index.html" class="menuLinkButton">Головна</a>
+            <a href="about.html" class="menuLinkButton">Про нас</a>
+            <a href="booking.html" class="menuLinkButton">Забронювати</a>
+            <a href="contacts.html" class="menuLinkButton">Контакти</a>
+            <a href="personal.html" class="menuLinkButton">Особистий кабінет</a>
+
+            <div class="selectWrap">
+                <img class="globusLang" src="./images/globus.png">
+                <select class="langSelect">
+                    <option>UA</option>
+                    <option>FR</option>
+                    <option>EN</option>
+                </select>
+            </div>
+        </div>
+   </header>
+
+    <p class="pagelabel">Бронювання будиночка в Карпатах</p>
+
+    <a href="booking.html" class="backButton">&#8592; Назад</a>
+
+    <div class="main">
+        <a href="#" class="toTop">&#8593;</a>
+
+        <div class="demonstrationBlock">
+            <div id="leftDemostrationPart" class="verticalDemonstrationBlock">
+                <img src="./images/karpaty.png">
+                <img src="./images/bookingHouse1.png">
+            </div>
+
+            <div id="rightDemostrationPart" class="verticalDemonstrationBlock">
+                <div class="demonstrationTextBlock">
+                    <p>Затишні дерев’яні будиночки, які заховались на окраїні лісу, зустрічатимуть Вас чудовим краєвидом на ранкові полонини.</p>
+                    
+                    <p>Ви можете обрати кількість кімнат та місце, яке буде ідеальним для Вас.  Територія, на якій базуються будиночки, підійде як і для великих компаній, яким потрібно бути поряд у декількох будинках, так і для пар, які хочуть бути на одинці.</p>
+                </div>
+                    
+                <div class="rightPartDemonstrationPhotos">
+                    <img src="./images/bookingHouse2.png">
+                    <img src="./images/bookingHouse3.png">
+                </div>
+            </div>
+        </div>
+
+        <p class="pagePartTopic">Наявність місць</p>
+
+        <form class="pollBlock"  action="hahaFile2.php" method="get">
+            <div class="pollMain">
+                <p class="baseText">Коли б Ви хотіли зупинись в помешканні Полонини Карпат?</p>
+
+                <div class="termBlock">
+                    <div class="inputGroup">
+                        <label class="baseText" for="start">Дата заїзду</label>
+                        <input name="start" id="start" type="date">
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="baseText" for="finish">Дата виїзду</label>
+                        <input name="finish" id="finish" type="date">
+                    </div>
+                </div>
+
+                <div class="peopleCount">
+                    <div class="inputGroup">
+                        <label class="baseText" for="rooms">Номери</label>
+                        <input name="rooms" id="rooms" type="number" value="1" min="1">
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="baseText" for="adult">Дорослі</label>
+                        <input name="adult" id="adult" type="number" value="2" min="1">
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="baseText" for="child">Діти</label>
+                        <input name="child" id="child" type="number" value="0" min="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pollButtons">
+                <button class="checkButton">Перевірити наявність вільних місць</button>
+            </div>
+        </form>
+
+    <table class="priceTable">
+        <thead>
+            <tr>
+                <th>Вміщує</th>
+                <th>Тип розміщення</th>
+                <th>Ціна</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="capacityCell">
+                    <img src="./images/person.png">
+                    <img src="./images/person.png">
+                </td>
+
+                <td class="typeCell">
+                    <div class="roomInfo">
+                        <div class="roomText">
+                            <p class="roomTitle">Двомісний номер</p>
+                            <p class="bedDescription">1 широке двоспальне ліжко</p>
+                        </div>
+
+                        <img class="roomImage" src="./images/coupleRoom.png">
+                    </div>
+                </td>
+
+                <td class="actionCell">
+                    <button class="showPriceButton">Показати ціни</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <footer>
+        © 2021 HolidayTime.  All rights reserved.
+    </footer>
+</body>
+
+</html>

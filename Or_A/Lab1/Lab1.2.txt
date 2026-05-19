@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <font size="5">
+        <table border="1" align="center">
+            <tr height="30" align="center" bgcolor="#e0e0e0">
+                <td width="30"></td> 
+                <td width="85">A</td><td width="85">B</td><td width="85">C</td><td width="85">D</td><td width="85">E</td><td width="85">F</td><td width="85">G</td><td width="85">H</td> 
+                <td width="30"></td>
+            </tr>
+
+            <tr height="85" align="center">
+                <td bgcolor="#e0e0e0">8</td>
+                <td>♜</td><td bgcolor="#ebecd0"></td><td></td><td bgcolor="#ebecd0"></td><td></td><td bgcolor="#ebecd0">♜</td><td>♚</td><td bgcolor="#ebecd0"></td>
+                <td bgcolor="#e0e0e0">8</td>
+            </tr>
+
+            <tr height="85" align="center">
+                <td bgcolor="#e0e0e0">7</td>
+                <td bgcolor="#ebecd0">♟</td><td>♟</td><td bgcolor="#ebecd0">♟</td><td></td><td bgcolor="#ebecd0"></td><td>♟</td><td bgcolor="#ebecd0">♟</td><td>♟</td>
+                <td bgcolor="#e0e0e0">7</td>
+            </tr>
+
+            <tr height="85" align="center">
+                <td bgcolor="#e0e0e0">6</td>
+                <td></td><td bgcolor="#ebecd0"></td><td>♞</td><td bgcolor="#ebecd0"></td><td></td><td bgcolor="#ebecd0">♘</td><td></td><td bgcolor="#ebecd0"></td>
+                <td bgcolor="#e0e0e0">6</td>
+            </tr>
+
+            <tr height="85" align="center">
+                <td bgcolor="#e0e0e0">5</td>
+                <td bgcolor="#ebecd0"></td><td>♛</td><td bgcolor="#ebecd0"></td><td></td><td bgcolor="#ebecd0">♗</td><td></td><td bgcolor="#ebecd0"></td><td></td>
+                <td bgcolor="#e0e0e0">5</td>
+            </tr>
+
+            <tr height="85" align="center">
+                <td bgcolor="#e0e0e0">4</td>
+                <td></td><td bgcolor="#ebecd0">♙</td><td></td><td bgcolor="#ebecd0">♙</td><td>♗</td><td bgcolor="#ebecd0"></td><td></td><td bgcolor="#ebecd0"></td>
+                <td bgcolor="#e0e0e0">4</td>
+            </tr>
+
+            <tr height="85" align="center">
+                <td bgcolor="#e0e0e0">3</td>
+                <td bgcolor="#ebecd0"></td><td></td><td bgcolor="#ebecd0"></td><td></td><td bgcolor="#ebecd0"></td><td></td><td bgcolor="#ebecd0"></td><td></td>
+                <td bgcolor="#e0e0e0">3</td>
+            </tr>
+
+            <tr height="85" align="center">
+                <td bgcolor="#e0e0e0">2</td>
+                <td>♙</td><td bgcolor="#ebecd0"></td><td>♙</td><td bgcolor="#ebecd0"></td><td></td><td bgcolor="#ebecd0">♙</td><td>♙</td><td bgcolor="#ebecd0">♙</td>
+                <td bgcolor="#e0e0e0">2</td>
+            </tr>
+
+            <tr height="85" align="center">
+                <td bgcolor="#e0e0e0">1</td>
+                <td bgcolor="#ebecd0">♖</td><td></td><td bgcolor="#ebecd0"></td><td>♕</td><td bgcolor="#ebecd0">♔</td><td></td><td bgcolor="#ebecd0"></td><td>♖</td>
+                <td bgcolor="#e0e0e0">1</td>
+            </tr>
+
+            <tr height="30" align="center" bgcolor="#e0e0e0">
+                <td></td>
+                <td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td>
+                <td></td>
+            </tr>
+        </table>
+    </font>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="color-picker-container">
+	  <h3>Налаштування кольорів виділення:</h3>
+	  <label>
+              Ігри (парні): 
+              <input type="color" id="gamesColorPicker" value="#ff0000">
+          </label>
+	  <label>
+              Медіа (кожне 3-є з другого): 
+              <input type="color" id="mediaColorPicker" value="#add8e6">
+          </label>
+	  <label>
+              Предмети (перший і останній): 
+              <input type="color" id="subjectsColorPicker" value="#90ee90">
+          </label>
+    </div>
+
+	<h2>Улюблені ігри:</h2>
+	<ul class="games-list">
+		<li>Red Dead Redemption 2</li>
+		<li>Hollow Knight</li>
+		<li>Witcher 3</li>
+		<li>The Legend of Zelda: Breath of the Wild</li>
+		<li>Baldur's Gate 3</li>
+	</ul>
+
+	<h2>Улюблені фільми, серіали або аніме:</h2>
+	<ol class="media-list">
+		<li>Harry Potter</li>
+		<li>Lord of the Rings</li>
+		<li>Interstellar</li>
+		<li>1+1</li>
+		<li>The Wolf of Wall Street</li>
+		<li>Breaking Bad</li>
+		<li>Better Call Saul</li>
+		<li>Arcane</li>
+		<li>Frieren: Beyond Journey's End</li>
+		<li>Attack on Titan</li>
+	</ol>
+
+	<h2>Улюблені предмети:</h2>
+	<dl class="subjects-list">
+		<dt>Програмування для інтернет</dt>
+		<dd>вивчаємо веб-розробку.</dd>
+
+		<dt>Операційні системи</dt>
+		<dd>вивчаємо UNIX-подібні системи.</dd>
+
+		<dt>Мультимедійні системи</dt>
+		<dd>вивчаємо gamedev.</dd>
+	</dl>
+</body>
+</html>

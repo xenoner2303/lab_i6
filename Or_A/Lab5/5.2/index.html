@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolidayTime - Головна</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="Logo.png" alt="HolidayTime Logo" class="logo-placeholder">
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-item active">ГОЛОВНА</a>
+                <a href="about.html" class="nav-item">ПРО НАС</a>
+                <a href="booking.html" class="nav-item">ЗАБРОНЮВАТИ</a>
+                <a href="contacts.html" class="nav-item">КОНТАКТИ</a>
+                <a href="profile.html" class="nav-item">ОСОБИСТИЙ КАБІНЕТ</a>
+            </nav>
+
+            <div class="lang-selector-wrapper">
+                <div class="lang-icon">
+                    🌐
+                </div>
+                <select class="lang-select">
+                    <option value="ua" selected>UA</option>
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="hero-banner">
+            <div class="hero-overlay">
+                <h1 class="hero-title">HolidayTime</h1>
+                <p class="hero-subtitle">Автентичний відпочинок серед українського колориту!</p>
+            </div>
+        </section>
+
+        <section class="house-slider">
+            <div class="slider-content">
+                <div class="slider-description">
+                    <a href="house-details.html" class="btn-view">
+                        <span>Переглянути</span>
+                        <span class="arrow">→</span>
+                    </a>
+                    <p>Полонини Карпат, у селі Орів посеред гір розташувався затишний куточок для незабутніх вражень. Справжні українські гори, власноручне сироваріння на полонині, водоспади та вікові дерева чекають на Вас.</p>
+                    
+                    <div class="slider-dots">
+                        <span class="dot active"></span> <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
+                <div class="slider-arrow-next">
+                    <span>&gt;</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-block">
+            <div class="info-image-side">
+                </div>
+            <div class="info-text-side">
+                <p>Активний відпочинок у нетипових локаціях. Незаймана природа та місцевий колорит подарують Вам незабутні враження.</p>
+            </div>
+        </section>
+
+        <section class="feedback-section">
+            <div class="feedback-card">
+                <h2 class="feedback-title">Зворотній зв'язок</h2>
+                
+                <form class="feedback-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label>Ім'я</label>
+                        <input type="text" placeholder="Введіть ім'я" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Номер телефону</label>
+                        <input type="tel" placeholder="Введіть номер телефону" class="form-input">
+                    </div>
+                    
+                    <button type="button" class="btn-submit">Запросити виклик</button>
+                </form>
+            </div>
+            
+            <div class="scroll-top-btn">
+                <span>↑</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2021 HolidayTime. All rights reserved.</p>
+    </footer>
+</body>
+</html>

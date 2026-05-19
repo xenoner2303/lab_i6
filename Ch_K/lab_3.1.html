@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Hotel Booking</h1>
+    <div style="text-align: center;">
+        <small>Special discount for "Програмування для Інтернет" students</small>
+    </div>
+    <br>
+    <form>
+        <table>
+            <th></th>
+            <tr>
+                <td>
+                    <label for="fullname">Name</label><br>
+                    <div class="row">
+                    <div class="box">
+                    <input type="text" name="Fist_name" required><br>
+                    <small>First Name</small>
+                    </div>       
+                    <div class="box">
+                    <input type="text" name="Last_name" required><br>
+                    <small>Last Name</small><br>
+                    </div>
+                    </div>
+                   
+                </td>
+                <td>
+                   
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" placeholder="ex: myname@example.com" required><br>
+                    <small>example@example.com</small><br>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="roomtype">Room Type</label><br>
+                    <select name="room_types">
+                        <option selected>Please select</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                    </select><br>
+                </td>
+                <td>
+                    <br>
+                    <label for="numberofguests">Number of Guests</label><br>
+                    <input type="number" placeholder="e.g., 4" required><br>
+                    <small>(min 1, max 10)</small><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="arrivardatetime">Arrival Date & Time</label><br>
+                    <input type="date" required>
+                    <input type="time" required>
+                    <select name ="time" required>
+                        <option selected>AM</option>
+                        <option selected>PM</option>
+                    </select><br>
+                    <small>Hour Minutes</small><br>
+                    <br>
+                    <label for="depaturedate">Depature Date</label><br>
+                    <input type="date" placeholder="Pleace select a day" required><br>
+                    <br>
+                    <label for="freepickup">Free Pickup?</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><input type="radio" name="freepickup" required> Yes Please! - Pick me up on arrival</label>
+                </td>
+                <td>
+                    <label><input type="radio" name="freepickup"> No Thanks - I`ll make my own way there</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label for="flightnumber">Flight Number</label><br>
+        <input type="text"><br>
+        <br>
+            <label for="meals">Meals</label><br>
+            <label><input type="checkbox" name="meals" required>breakfast</label><br>
+            <label><input type="checkbox" name="meals">lunch</label><br>
+            <label><input type="checkbox" name="meals">afternoon tea</label><br>
+            <label><input type="checkbox" name="meals">dinner</label><br>
+        <br>
+        <label for="specialrequests">Special Requests</label><br>
+        <textarea name="special_requests" rows="10" cols="90"></textarea><br>
+        <br>
+            <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

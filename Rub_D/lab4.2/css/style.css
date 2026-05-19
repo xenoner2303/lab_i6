@@ -1,0 +1,49 @@
+body {
+    padding: 0 20vw;
+}
+
+h1 { 
+    text-align: center; 
+}
+
+td {
+    text-align: center;
+    font-weight: bold;
+}
+
+tr:first-child td:nth-child(n+2) {
+    width: 14%;
+}
+
+tr:nth-child(n+2) td:first-child {
+    height: 5em;
+
+    font-style: italic;
+}
+
+tr:nth-child(n+2) td:nth-child(n+2) {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+tr:nth-child(n+2) td:nth-child(2), tr:nth-child(n+2) td:nth-child(8) {
+    color: green;
+}
+
+tr:nth-child(6) td:nth-child(n+5) {
+    color: grey;
+}
+
+tr:nth-child(3) td:nth-child(2),
+tr:nth-child(4) td:nth-child(4),
+tr:nth-child(5) td:nth-child(5)
+{
+    color: red;
+}
+
+tr:nth-child(5) td:nth-child(3) {
+    color: blue;
+
+    background-image: url('https://img.freepik.com/free-vector/confetti-background-with-space_1017-10069.jpg?semt=ais_hybrid&w=740&q=80');
+    background-size: cover;
+}

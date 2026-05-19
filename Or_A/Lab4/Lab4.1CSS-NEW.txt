@@ -1,0 +1,18 @@
+:root {
+    --games-color: red;
+    --media-color: lightblue;
+    --subjects-color: lightgreen;
+}
+
+.games-list li:nth-child(2n) {
+    background-color: var(--games-color);
+}
+
+.media-list li:nth-child(3n+2) {
+    background-color: var(--media-color);
+}
+
+.subjects-list dt:first-of-type,
+.subjects-list dt:last-of-type {
+    background-color: var(--subjects-color);
+}

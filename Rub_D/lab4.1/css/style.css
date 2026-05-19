@@ -1,0 +1,95 @@
+body {
+    padding: 0 20vw;
+
+    background-color: antiquewhite
+}
+
+.listTopics {
+    height: 15vh;
+    width: 100%;
+
+    text-align: center;
+    align-content: center;
+}
+
+.titleText {
+    color: greenyellow;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Arial;
+
+    padding: 10px;
+    border: 6px inset greenyellow;
+    border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#gamesTopic {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsrV5sjdWTomTCmsnG82tXlwoV2Yq56vbA4g&s');
+    background-size: contain;
+}
+
+#mediaTopic {
+    background-image: url('https://static4.depositphotos.com/1006994/413/i/450/depositphotos_4137133-stock-photo-grunge-film-background.jpg');
+    background-size: contain;
+}
+
+#itemsTopic {
+    background-image: url('https://png.pngtree.com/background/20250203/original/pngtree-rows-of-books-on-bookshelves-in-public-library-picture-image_16105215.jpg');
+    background-size: contain;
+
+}
+
+.listOfFavorites {
+    font-size: 20px;
+    padding-left: 0;
+    margin: 0 0 10px 0;
+
+    background-color: rgba(108, 84, 84, 0.5);
+}
+
+.listOfFavorites li {
+    list-style-position: inside;
+}
+
+.listOfFavorites dt {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.listOfFavorites dd {
+    margin-left: 20px;
+    color: white;
+}
+
+.listOfFavorites dd::before {
+    content: "\21B3";
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.listOfFavorites li:hover {
+    background-color: rgba(103, 103, 103, 0.5);
+}
+
+/* у першому списку кожний другий елемент*/
+#gamesList li:nth-child(2n) {
+    background-color: aquamarine;
+}
+
+/* у другому - кожен третій, починаючи з другого*/
+#mediaList li:nth-child(3n+2) {
+    background-color: aquamarine;
+}
+
+/* у третьому - перший та останній*/
+#esubjectDataList dt:first-child,
+#esubjectDataList dt:first-child+dd {
+    background-color: aquamarine;
+}
+
+#esubjectDataList dt:last-of-type,
+#esubjectDataList dd:last-child {
+    background-color: aquamarine;
+}

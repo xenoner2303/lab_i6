@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header{
+  width: 100%;
+  height: 7vh;
+
+  padding: 10px 5px;
+}
+
+button{
+  cursor: pointer;
+}
+
+.leftMenu{
+  float: left;
+  height: 100%;
+}
+
+.menuButtonImage{
+  width: 30px;
+  height: 30px;
+
+  vertical-align: middle;
+}
+
+.subMenuButton, .audioButton, .youButton, .descriptionKebabButton{
+  height: 100%;
+  aspect-ratio: 1/1;
+
+  border-radius: 50%;
+  border: none;
+}
+
+.subMenuButton{
+  background-color: white;
+}
+
+#menuButton{
+  margin-right: 10px;
+}
+
+.youtubeLink{
+  height: 100%;
+
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search{
+  float: left;
+
+  margin-left: 20%;
+  height: 100%;
+}
+
+.searchInput {
+  width: 500px;
+  height: 100%;
+
+  float: left;
+  padding-left: 5px;
+  border-right: none;
+  border-radius: 50px 0 0 50px;
+}
+
+.searchButton {
+  height: 100%;
+
+  float: left;
+  margin: 0 20px 0 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.audioButton{
+  float: left;
+}
+
+.rightMenu{
+  float: right;
+  height: 100%;
+}
+
+.createButton{
+  height: 100%;
+
+  float: left;
+  border-radius: 20px;
+  border: none;
+}
+
+.youButton{
+  background-color: orange;
+}
+
+aside{
+  width: 15%;
+  padding: 5px 0;
+
+  float: left;
+}
+
+.asidePart{
+  padding: 5px 0;
+  
+  border-bottom: 1px #d9d9d9 solid;
+}
+
+.asideButton{
+  width: 100%;
+  height: 10vh;
+  display: block;
+
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.subMenuButton:hover, .audioButton:hover, .asideButton:hover, .descriptionKebabButton:hover{
+  background-color: #d9d9d9;
+}
+
+.informLink{
+  text-decoration: none;
+  color: gray;
+  font-size: 12px;
+}
+
+.videoReg{
+  width: 85%;
+  padding: 5px 0 5px 10px;
+
+  float: left;
+}
+
+.videoPart{
+  width: 100%;
+  margin-bottom: 20px;
+
+  overflow: hidden;
+}
+
+.tagButton{
+  padding: 5px;
+  margin-right: 10px;
+
+  border: none;
+  border-radius: 20px;
+}
+
+#AllTag{
+  background-color: black;
+  color: white;
+}
+
+.videoPresent{
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+
+.videoPresent:nth-child(3n) {
+  margin-right: 0;
+}
+
+.video{
+  width: 100%;
+  aspect-ratio: 16/9;
+
+  display: block;
+}
+
+.videoDescription {
+  margin-left: 5px;
+}
+
+.avatarImage{
+  height: 30px;
+  width: 30px;
+
+  float: left;
+}
+
+.nameRow{
+  margin-top: 5px;
+}
+
+.videoName{
+  margin: 0;
+  width: 85%;
+
+  float: left;
+}
+
+.descriptionKebabButton {
+  width: 24px;
+  height: 24px;
+
+  float: right;
+  background-color: white;
+}
+
+.subDescriptionInform {
+  color: gray;
+  font-size: 12px;
+}
+
+.shortsTopisRow{
+  width: 100%;
+
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.shortsName{
+  width: 85%;
+
+  float: left;
+  font-weight: bold;
+}
+
+.shortsPresent {
+  width: 23.5%;
+  margin-right: 2%;
+
+  float: left;
+}
+
+.shortsPresent:nth-child(5n) {
+  margin-right: 0;
+}
+
+.shorts {
+  width: 100%;
+  aspect-ratio: 9/16;
+  
+  border-radius: 12px;
+}

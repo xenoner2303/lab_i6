@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <font face="Arial">
+        <table width="700" align="center">
+            <tr>
+                <td>
+                    <h2 align="center"><font color="#1a51a3">Опитування: Задоволеність освітньою програмою</font></h2>
+                    <p align="center"><font size="2" color="#666">Будь ласка, приділіть кілька хвилин, щоб допомогти нам покращити навчання.</font></p>
+                    <hr size="1">
+                    <br>
+                    
+                    <form>
+                        <table width="100%">
+                            <tr>
+                                <td width="50%">
+                                    <font size="2"><b>ПІБ студента:</b></font>
+                                    <br>
+                                    <input type="text" name="student_name" placeholder="Введіть повне ім'я" size="45">
+                                </td>
+                                <td width="50%">
+                                    <font size="2"><b>Курс навчання:</b></font>
+                                    <br>
+                                    <select name="course">
+                                        <option value="1">1 курс&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                        <option value="2">2 курс</option>
+                                        <option value="3">3 курс</option>
+                                        <option value="4">4 курс</option>
+                                        <option value="5">5 курс</option>
+                                        <option value="6">6 курс</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <font size="2"><b>Контактний Email:</b></font><br>
+                                    <input type="email" name="email" placeholder="example@gmail.com" size="98">
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br><br>
+                        
+                        <font size="2"><b>1. Як ви оцінюєте актуальність навчальних дисциплін?</b></font><br>
+                        <input type="radio" name="rating" value="5" id="r5"> 
+                        <label for="r5"><font size="2">Відмінно</font></label>
+                        <br>
+                        <input type="radio" name="rating" value="4" id="r4"> 
+                        <label for="r4"><font size="2">Добре</font></label>
+                        <br>
+                        <input type="radio" name="rating" value="3" id="r3"> 
+                        <label for="r3"><font size="2">Задовільно</font></label>
+                        <br>
+                        <input type="radio" name="rating" value="2" id="r2"> 
+                        <label for="r2"><font size="2">Незадовільно</font></label>
+
+                        <br><br>
+                        
+                        <font size="2"><b>2. Які аспекти програми вам подобаються найбільше? (можна декілька):</b></font>
+                        <br>
+                        <input type="checkbox" name="fav" value="practice" id="c1">
+                        <label for="c1"><font size="2">Велика кількість практики</font></label>
+                        <br>
+                        <input type="checkbox" name="fav" value="teachers" id="c2">
+                        <label for="c2"><font size="2">Кваліфіковані викладачі</font></label>
+                        <br>
+                        <input type="checkbox" name="fav" value="materials" id="c3">
+                        <label for="c3"><font size="2">Доступ до сучасних матеріалів</font></label>
+                        <br>
+                        <input type="checkbox" name="fav" value="schedule" id="c4">
+                        <label for="c4"><font size="2">Гнучкий графік занять</font></label>
+
+                        <br><br>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="50%">
+                                    <font size="2"><b>Бажана кількість годин практики на тиждень:</b></font>
+                                    <br>
+                                    <input type="number" name="hours" value="10">
+                                </td>
+                                <td width="50%">
+                                    <font size="2"><b>Дата заповнення:</b></font>
+                                    <br>
+                                    <input type="date" name="survey_date" value="2026-03-23">
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br><br>
+
+                        <font size="2"><b>Ваші пропозиції щодо покращення програми:</b></font>
+                        <br>
+                        <textarea name="feedback" rows="5" cols="94" placeholder="Напишіть ваші думки тут..."></textarea>
+
+                        <br><br>
+                        
+                        <p align="center">
+                            <input type="submit" value="Надіслати відповідь">
+                            &nbsp;&nbsp;
+                            <input type="reset" value="Очистити форму">
+                        </p>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </font>
+</body>
+</html>

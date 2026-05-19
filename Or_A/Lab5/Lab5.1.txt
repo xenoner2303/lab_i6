@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="logo">YouTube</div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Введіть запит">
+            <button>🔍</button>
+        </div>
+
+        <div class="user-icons">
+            <span>+ Створити</span>
+            <span>🔔</span>
+            <span>👤</span>
+        </div>
+    </header>
+
+    <aside>
+        <ul>
+            <li>Головна</li>
+            <li>Shorts</li>
+        </ul>
+
+        <ul>
+            <li>Підписки</li>
+        </ul>
+
+        <ul>
+            <div class="menu-title">Ви</div>
+            <li>Мій канал</li>
+            <li>Історія</li>
+            <li>Плейлисти</li>
+            <li>Дивитися пізніше</li>
+            <li>Відео, які сподобалися</li>
+            <li>Ваші відео</li>
+            <li>Скачані</li>
+        </ul>
+
+        <ul>
+            <div class="menu-title">Навігатор</div>
+            <li>Музика</li>
+            <li>Фільми</li>
+            <li>Відеоігри</li>
+            <li>Новини</li>
+            <li>Спорт</li>
+            <li>Навчання</li>
+        </ul>
+
+        <ul>
+            <div class="menu-title">Більше від YouTube</div>
+            <li>YouTube Premium</li>
+            <li>YouTube Music</li>
+            <li>YouTube Kids</li>
+        </ul>
+
+        <ul style="border-bottom: none;">
+            <li>Скарги</li>
+        </ul>
+    </aside>
+
+    <main class="clearfix">
+        <div class="categories clearfix">
+            <div class="category-btn active">Всі</div>
+            <div class="category-btn">Відеоігри</div>
+            <div class="category-btn">Музика</div>
+            <div class="category-btn">Зараз в ефірі</div>
+            <div class="category-btn">Екшн та пригоди</div>
+            <div class="category-btn">Анімація</div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/XqZsoesa55w?si=NPnC3TIsLzn33cO2" allowfullscreen></iframe>
+            <div class="video-info clearfix">
+                <div class="channel-avatar" style="background-color: blue;"></div>
+                <div class="video-details">
+                    <div class="video-title">Baby Shark Dance</div>
+                    <div class="video-stats">Baby Shark - Pinkfong Kids’ Songs & Stories<br>16.9 млрд переглядів • 9 років тому</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=QSYAoco8ZIS6EFTb" allowfullscreen></iframe>
+            <div class="video-info clearfix">
+                <div class="channel-avatar" style="background-color: green;"></div>
+                <div class="video-details">
+                    <div class="video-title">Rick Astley - Never Gonna Give You Up</div>
+                    <div class="video-stats">Rick Astley<br>1.7 млрд переглядів • 16 років тому</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk?si=AI_HnqNmIigDTLS_" allowfullscreen></iframe>
+            <div class="video-info clearfix">
+                <div class="channel-avatar" style="background-color: orange;"></div>
+                <div class="video-details">
+                    <div class="video-title">Luis Fonsi - Despacito ft. Daddy Yankee</div>
+                    <div class="video-stats">Luis Fonsi<br>9 млрд переглядів • 9 років тому</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0?si=Lbd2_cIguEUlC6sJ" allowfullscreen></iframe>
+            <div class="video-info clearfix">
+                <div class="channel-avatar" style="background-color: purple;"></div>
+                <div class="video-details">
+                    <div class="video-title">PSY - GANGNAM STYLE(강남스타일) M/V</div>
+                    <div class="video-stats">officialpsy<br>5.9 млрд переглядів • 13 років тому</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/k85mRPqvMbE?si=RKCDKwnl6FILuBSI" allowfullscreen></iframe>
+            <div class="video-info clearfix">
+                <div class="channel-avatar" style="background-color: teal;"></div>
+                <div class="video-details">
+                    <div class="video-title">Crazy Frog - Axel F (Official Video)</div>
+                    <div class="video-stats">Crazy Frog<br>5.9 млрд переглядів • 16 років тому</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/09R8_2nJtjg?si=zoZswFVizSK4HUJj" allowfullscreen></iframe>
+            <div class="video-info clearfix">
+                <div class="channel-avatar" style="background-color: crimson;"></div>
+                <div class="video-details">
+                    <div class="video-title">Maroon 5 - Sugar (Official Music Video)</div>
+                    <div class="video-stats">Maroon 5<br>4.3 млрд переглядів • 11 років тому</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
