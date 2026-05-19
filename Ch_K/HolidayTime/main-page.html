@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c02312c5f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HolidayTime</title>
+    <link rel="icon" type="image/svg" sizes="64x64" href="resources/logo.svg">
+</head>
+
+<body>
+    <header class="dark" id="header"></header>
+
+    <main>
+        <section class="adv-block">
+            <h1 style="font-size: 75px;"><b>HolidayTime</b></h1>
+            <h2 style="font-size: 50px;"><b>Автентичний відпочинок серед українського колориту!</b></h2>
+        </section>
+    
+        <section class="second-block">
+            <img  id="right-arrow" src="resources/arrow-right.svg" alt="arrow-right" onclick="goToHouse()">
+            <div class="side-info-block">
+                <button id="side-info-btn" href="house.html" class="dark">Переглянути<i class="fa-solid fa-arrow-right fa-2xl"></i></button>
+                <p><i>Полонини Карпат, у селі Орів посеред гір розташувався затишний куточок для незабутніх вражень. 
+                    <br>Справжні українські гори, власноручне сироваріння на полонині, водоспади та вікові дерева чекають на Вас.</i></p>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="third-block">
+            <img style="width: auto;" src="resources/couple.svg">
+            <div class="info-block">
+                <p>Активний відпочинок у нетипових лоцаціях. Незаймана природа та місцевий колорит подарують Вам незабутні враження.</p>
+            </div>
+        </section>
+        <div class="feedback-form">
+            <form>
+                <div class="input-part">
+                    <h3 style="font-size: 36px; margin-bottom: 15px; text-align: center;">Зворотній зв’язок</h3>
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" placeholder="Введіть ім’я">
+                    <label for="phone_num">Номер телефону</label>
+                    <input type="tel" id="phone-num" placeholder="Введіть номер телефону">
+                </div>
+                <button type="submit">Запросити виклик</button>
+            </form>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

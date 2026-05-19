@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c02312c5f.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>YouTube</title>
+    <link rel="icon" type="image/png" sizes="32x32" 
+      href="https://www.youtube.com/s/desktop/b232f2cf/img/favicon_32x32.png">
+</head>
+<body>
+    <div class="head-box">
+        <div id="first-block">
+            <button id="menu-btn"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
+            <div class="logo" style="display: flex; align-items: center;">
+                <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                <h1 style="font-family: 'Oswald', Arial, sans-serif; font-weight: 200; font-size: 24px; color: #fff;">YouTube</h1><sup style="color: #fff; font-size: 8px;">UA</sup>
+            </div>
+        </div>
+
+        <div class="search-block">
+            <div class="search-bar">
+                <input type="text" placeholder="Search"><button><i class="fa-solid fa-keyboard"></i></button></input>
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <button id="mic-btn"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+        <div id="last-block">
+            <button id="create-btn"><i class="fa-solid fa-plus"></i><span>Create</span></button>
+            <button id="bell-btn"><i class="fa-solid fa-bell"></i></button>
+            <button id="user-btn"><i class="fa-solid fa-user"></i></button>
+        </div>
+    </div>
+
+    <div class="main-box">
+        <aside class="menu-box">
+            <section class="first-menu-section">
+                <button><i class="fa-solid fa-house"></i><span>Home</span></button>
+                <button><i class="fa-solid fa-video"></i><span>Shorts</span></button>
+            </section>
+            <hr>
+            <section class="subscribtion-menu-section">
+                <button><span style="padding-right: 8px; font-weight: 500; font-size: 16px;">Subscriptions</span> <i class="fa-solid fa-arrow-right"></i></button>
+                
+                <div class="channels-list" id="channels"></div>
+
+                <button><i class="fa-solid fa-arrow-down"></i><span>Expand</span></button>
+            </section>
+            <hr>
+            <section class="you-menu-section">
+                <div class="user-section"></div>
+                <button><span style="padding-right: 8px; font-weight: 500; font-size: 16px;">You</span> <i class="fa-solid fa-arrow-right"></i></button>
+                <button><i class="fa-solid fa-house-user"></i><span>My channel</span></button>
+                <button><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></button>
+                <button><i class="fa-solid fa-layer-group"></i><span>Playlists</span></button>
+                <button><i class="fa-solid fa-clock"></i><span>Watch later</span></button>
+                <button><i class="fa-solid fa-heart"></i><span>Liked</span></button>
+                <button><i class="fa-solid fa-film"></i><span>Your videos</span></button>
+                <button><i class="fa-solid fa-download"></i><span>Downloaded</span></button>
+                <button><i class="fa-solid fa-podcast"></i><span>Podcasts</span></button>
+                <button><i class="fa-solid fa-book-bookmark"></i><span>Courses</span></button>
+                <button><i class="fa-solid fa-arrow-up-long"></i><span>Collapse</span></button>
+            </section>
+            <hr>
+            <section class="navigator-menu-section">
+                <p>Navigator</p>
+                <button><i class="fa-brands fa-itunes-note"></i><span>Music</span></button>
+                <button><i class="fa-solid fa-clapperboard"></i><span>Films</span></button>
+                <button><i class="fa-solid fa-gamepad"></i><span>Gaming</span></button>
+                <button><i class="fa-solid fa-newspaper"></i><span>News</span></button>
+                <button><i class="fa-solid fa-trophy"></i><span>Sport</span></button>
+                <button><i class="fa-solid fa-lightbulb"></i><span>Learning</span></button>
+                <button><i class="fa-solid fa-arrow-up"></i><span>Collapse</span></button>
+            </section> 
+            <hr>
+            <section class="other-opportunities-menu-section">
+                <p>Other opportunities</p>
+                <button><i class="fa-solid fa-crown"></i><span>YouTube Premium</span></button>
+                <button><i class="fa-solid fa-music"></i><span>YouTube Music</span></button>
+                <button><i class="fa-solid fa-tv"></i><span>YouTube Kids</span></button>
+            </section>   
+            <hr>
+            <section class="complaints-menu-section">
+                <button><i class="fa-solid fa-flag"></i><span>Complaints</span></button>
+            </section>
+            <hr>
+            <footer>
+                <div style="padding: 16px 24px 0px;">
+                    <p>About the Service</p>
+                    <p>Press</p>
+                    <p>Copyright</p>
+                    <p>Contact Us</p>
+                    <p>Authors</p>
+                    <p>Advertisers</p>
+                    <p>Developers</p>
+                </div>
+                <div style="padding: 12px 24px 0px;">
+                    <p>Terms of Service</p>
+                    <p>Privacy</p>
+                    <p>Rules and Safety</p>
+                    <p>How YouTube Works</p>
+                    <p>Testing New Features</p>
+                </div>
+                <p style="padding: 16px 24px; font-size: 12px; color: #777;">© 2026 Google LLC</p>
+            </footer>
+        </aside>
+            
+        <main class="workplace">
+            <section class="category-box" id="categories"></section>
+            <section id="videos" class="video-grid"></section>
+
+            <section class="shorts-section">
+                <div class="shorts-header">
+                    <div class="shorts-logo">
+                        <i class="fa-solid fa-video" style="color: #fff; margin: 8px;"></i><p>Shorts</p>
+                    </div>
+                    <button><i class="fa-solid fa-ellipsis-vertical ellipsis-icon" style="color: #fff;"></i></button>
+                </div>
+                <section class="shorts-video-section"></section>
+            </section>
+        </main>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
