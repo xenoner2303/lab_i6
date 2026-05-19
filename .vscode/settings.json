@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "ristoll",
+        "projectKey": "Ristoll_Lab_i6"
+    }
+}
