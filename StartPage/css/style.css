@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+
+    font-family: 'PT Sans';
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+
+    background:
+        linear-gradient(rgba(100, 100, 100, 0.3), rgba(100, 100, 100, 0.6)),
+        url(https://oboitd.ru/images/goods/big/20200205110828_Priroda_10-245.jpg);
+        
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.labPresentation{
+    width: 20vw;
+    height: 80vh;
+
+    border-radius: 10px;
+    border: 3px white solid;
+    
+    background-color: rgba(250, 245, 215, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 10px 35px black;
+}
+
+.pibPar{
+    height: 5%;
+    width: 100%;
+    padding: 5px 10px;
+
+    background-color: rgb(201, 140, 140);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+
+    border-radius: 10px 10px 0px 0px; /*не забути що якщо зробити hidden e labPresentation, останнє сабменю не зможе вилізти через перерахунок*/
+}
+
+.labPresentationMain{
+    width: 100%;
+    padding: 10px 5px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.labCard{
+    width: 100%;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+
+    background-color: white;
+    overflow: hidden;
+}
+
+.labCard:hover{
+    background-color: rgb(201, 140, 140);
+    outline: 5px outset white;
+
+    cursor: pointer;
+}
+
+.labCard img{
+    width: 50%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.labCard p{
+    width: 50%;
+    padding: 5px 10px;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.labBlock{
+    position: relative;
+    width: 100%;
+}
+
+.labSubmenu{
+    z-index: 1;
+
+    position: absolute;
+    top: 100%;
+
+    width: 100%;
+    
+    display: none;
+    flex-direction: column;
+
+    background-color: white;
+
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+.labSubmenu a{
+    padding: 10px 5px;
+
+    background-color: rgb(250, 245, 215);
+
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    border-top: 3px solid white;
+}
+
+.labSubmenu a:hover{
+    background-color: rgb(201, 140, 140);
+}
+
