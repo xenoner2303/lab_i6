@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <font face="Arial">
+        <table width="700" align="center">
+            <tr>
+                <td>
+                    <h2 align="center"><font color="#1a51a3">Опитування: Задоволеність роботою та комфортом в офісі</font></h2>
+                    <p align="center"><font size="2" color="#666">Будь ласка, приділіть кілька хвилин, щоб допомогти нам покращити умови праці.</font></p>
+                    <hr size="1">
+                    <br>
+                    
+                    <form>
+                        <table width="100%">
+                            <tr>
+                                <td width="50%">
+                                    <font size="2"><b>ПІБ працівника:</b></font>
+                                    <br>
+                                    <input type="text" name="employee_name" placeholder="Введіть повне ім'я" size="45">
+                                </td>
+                                <td width="50%">
+                                    <font size="2"><b>Відділ:</b></font>
+                                    <br>
+                                    <select name="department">
+                                        <option value="hr">HR</option>
+                                        <option value="it">IT</option>
+                                        <option value="sales">Продажі</option>
+                                        <option value="marketing">Маркетинг</option>
+                                        <option value="finance">Фінанси</option>
+                                        <option value="operations">Операційний</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <font size="2"><b>Контактний Email:</b></font><br>
+                                    <input type="email" name="email" placeholder="example@gmail.com" size="98">
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br><br>
+                        
+                        <font size="2"><b>1. Як ви оцінюєте комфорт на вашому робочому місці?</b></font><br>
+                        <input type="radio" name="rating" value="5" id="r5"> 
+                        <label for="r5"><font size="2">Відмінно</font></label>
+                        <br>
+                        <input type="radio" name="rating" value="4" id="r4"> 
+                        <label for="r4"><font size="2">Добре</font></label>
+                        <br>
+                        <input type="radio" name="rating" value="3" id="r3"> 
+                        <label for="r3"><font size="2">Задовільно</font></label>
+                        <br>
+                        <input type="radio" name="rating" value="2" id="r2"> 
+                        <label for="r2"><font size="2">Незадовільно</font></label>
+
+                        <br><br>
+                        
+                        <font size="2"><b>2. Які аспекти роботи вам подобаються найбільше? (можна декілька):</b></font>
+                        <br>
+                        <input type="checkbox" name="fav" value="team" id="c1">
+                        <label for="c1"><font size="2">Дружній колектив</font></label>
+                        <br>
+                        <input type="checkbox" name="fav" value="equipment" id="c2">
+                        <label for="c2"><font size="2">Сучасне обладнання</font></label>
+                        <br>
+                        <input type="checkbox" name="fav" value="breaks" id="c3">
+                        <label for="c3"><font size="2">Регулярні перерви та зони відпочинку</font></label>
+                        <br>
+                        <input type="checkbox" name="fav" value="flexible" id="c4">
+                        <label for="c4"><font size="2">Гнучкий графік роботи</font></label>
+
+                        <br><br>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="50%">
+                                    <font size="2"><b>Бажана кількість днів віддаленої роботи на тиждень:</b></font>
+                                    <br>
+                                    <input type="number" name="remote_days" value="2">
+                                </td>
+                                <td width="50%">
+                                    <font size="2"><b>Дата заповнення:</b></font>
+                                    <br>
+                                    <input type="date" name="survey_date" value="2026-03-23">
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br><br>
+
+                        <font size="2"><b>Ваші пропозиції щодо покращення умов праці:</b></font>
+                        <br>
+                        <textarea name="feedback" rows="5" cols="94" placeholder="Напишіть ваші думки тут..."></textarea>
+
+                        <br><br>
+                        
+                        <p align="center">
+                            <input type="submit" value="Надіслати відповідь">
+                            &nbsp;&nbsp;
+                            <input type="reset" value="Очистити форму">
+                        </p>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </font>
+</body>
+</html>

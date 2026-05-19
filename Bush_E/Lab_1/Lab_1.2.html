@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Шахи</title>
+
+    <style>
+
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#444;
+            font-family:Arial;
+        }
+
+        table{
+            border-collapse:collapse;
+            background:white;
+        }
+
+        td{
+            width:85px;
+            height:85px;
+            text-align:center;
+            vertical-align:middle;
+            font-size:55px;
+            cursor:pointer;
+            user-select:none;
+        }
+
+        .white{
+            background:#ebecd0;
+        }
+
+        .black{
+            background:#779556;
+        }
+
+        .coords{
+            background:#d3d3d3;
+            font-size:22px;
+            font-weight:bold;
+            width:35px;
+            height:35px;
+            cursor:default;
+        }
+
+        .selected{
+            background:yellow !important;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<table border="1" id="board">
+
+
+    <tr>
+        <td class="coords"></td>
+
+        <td class="coords">A</td>
+        <td class="coords">B</td>
+        <td class="coords">C</td>
+        <td class="coords">D</td>
+        <td class="coords">E</td>
+        <td class="coords">F</td>
+        <td class="coords">G</td>
+        <td class="coords">H</td>
+
+        <td class="coords"></td>
+    </tr>
+
+    <tr>
+        <td class="coords">8</td>
+
+        <td class="black">♜</td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white">♜</td>
+        <td class="black">♚</td>
+        <td class="white"></td>
+
+        <td class="coords">8</td>
+    </tr>
+
+    <tr>
+        <td class="coords">7</td>
+
+        <td class="white">♟</td>
+        <td class="black">♟</td>
+        <td class="white">♟</td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black">♟</td>
+        <td class="white">♟</td>
+        <td class="black">♟</td>
+
+        <td class="coords">7</td>
+    </tr>
+
+    <tr>
+        <td class="coords">6</td>
+
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black">♞</td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white">♘</td>
+        <td class="black"></td>
+        <td class="white"></td>
+
+        <td class="coords">6</td>
+    </tr>
+
+    <tr>
+        <td class="coords">5</td>
+
+        <td class="white"></td>
+        <td class="black">♛</td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white">♗</td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+
+        <td class="coords">5</td>
+    </tr>
+
+    <tr>
+        <td class="coords">4</td>
+
+        <td class="black"></td>
+        <td class="white">♙</td>
+        <td class="black"></td>
+        <td class="white">♙</td>
+        <td class="black">♗</td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+
+        <td class="coords">4</td>
+    </tr>
+
+    <tr>
+        <td class="coords">3</td>
+
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+
+        <td class="coords">3</td>
+    </tr>
+
+    <tr>
+        <td class="coords">2</td>
+
+        <td class="black">♙</td>
+        <td class="white"></td>
+        <td class="black">♙</td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white">♙</td>
+        <td class="black">♙</td>
+        <td class="white">♙</td>
+
+        <td class="coords">2</td>
+    </tr>
+
+    <tr>
+        <td class="coords">1</td>
+
+        <td class="white">♖</td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black">♕</td>
+        <td class="white">♔</td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black">♖</td>
+
+        <td class="coords">1</td>
+    </tr>
+
+    <tr>
+        <td class="coords"></td>
+
+        <td class="coords">A</td>
+        <td class="coords">B</td>
+        <td class="coords">C</td>
+        <td class="coords">D</td>
+        <td class="coords">E</td>
+        <td class="coords">F</td>
+        <td class="coords">G</td>
+        <td class="coords">H</td>
+
+        <td class="coords"></td>
+    </tr>
+
+</table>
+
+<script>
+
+    let selectedCell = null;
+
+    const cells = document.querySelectorAll("#board td");
+
+    cells.forEach(cell => {
+
+        if(cell.classList.contains("coords")){
+            return;
+        }
+
+        cell.addEventListener("click", function(){
+
+
+            if(selectedCell === null){
+
+                if(cell.innerHTML.trim() !== ""){
+
+                    selectedCell = cell;
+                    cell.classList.add("selected");
+                }
+
+            }else{
+
+                if(selectedCell === cell){
+
+                    selectedCell.classList.remove("selected");
+                    selectedCell = null;
+
+                    return;
+                }
+
+                cell.innerHTML = selectedCell.innerHTML;
+
+                selectedCell.innerHTML = "";
+
+                selectedCell.classList.remove("selected");
+
+                selectedCell = null;
+            }
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>

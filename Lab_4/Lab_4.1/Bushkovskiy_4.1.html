@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мої улюблені речі</title>
+    
+    <link rel="stylesheet" href="color-picker.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        /* 1 список — кожен другий 
+        .games li:nth-child(even) {
+            background-color: #d0f0ff;
+        }
+
+         2 список — кожен третій, починаючи з другого 
+        .movies li:nth-child(3n+2) {
+            color: #b30059;
+            font-weight: bold;
+        }
+
+         3 список — перший і останній 
+        .items li:first-child {
+            background-color: #d5f5d5;
+        }
+
+        .items li:last-child {
+            background-color: #ffd6d6;
+        }*/
+    </style>
+</head>
+<body>
+<div class="color-picker-container"></div>
+    <h2>Мої улюблені ігри</h2>
+    <ul class="games-list">
+        <li>The Last of us</li>
+        <li>Stalker</li>
+        <li>Red Dead Redemshion 2</li>
+        <li>GTA V</li>
+        <li>The Witcher 3</li>
+        <li>Cyberpunk 2077</li>
+    </ul>
+
+    <h2>Мої улюблені фільми / серіали / аніме</h2>
+    <ol class="media-list">
+        <li>Breaking Bad</li>
+        <li>Interstellar</li>
+        <li>Attack on Titan</li>
+        <li>Inception</li>
+        <li>Stranger Things</li>
+        <li>Death Note</li>
+        <li>Game of Thrones</li>
+        <li>The Matrix</li>
+        <li>Naruto</li>
+        <li>Project Hail Marry</li>
+        <li>Avatar</li>
+    </ol>
+
+    <h2>Мої улюблені предмети</h2>
+<!---<ul class="subjects-list">
+        <li>
+            Програмування для Інтернет - дуже цікавий предмет і якісне викладання матеріалу з практичними прикладами.
+        </li>
+        <li>
+            UI/UX дизайн - дуже корисно, якщо хочеш спробувати себе в дизайні.
+        </li>
+        <li>
+            Філософія - цікаво відволіктися від профільних предметів та замислитися про сенс всього.
+        </li>
+        <li>
+            ООП - це база, без неї ніяк.
+        </li>
+    </ul>
+--->
+
+    <dl class="subjects-list">
+        <dt>Програмування для Інтернет</dt>
+        <dd>Дуже цікавий предмет і якісне викладання матеріалу з практичними прикладами.</dd>
+        <dt>UI/UX дизайн</dt>
+        <dd>Дуже корисно, якщо хочеш спробувати себе в дизайні.</dd>
+        <dt>Філософія</dt>
+        <dd>Цікаво відволіктися від профільних предметів та замислитися про сенс всього.</dd>
+        <dt>ООП</dt>
+        <dd>Це база, без неї ніяк.</dd>
+    </dl>
+
+    <script src="color-picker.js"></script>
+</body>
+</html>
