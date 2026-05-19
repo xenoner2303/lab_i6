@@ -1,143 +1,82 @@
 <!DOCTYPE html>
-<html lang="uk">
 <head>
-<meta charset="UTF-8">
-<title>Календар</title>
 
-<style>
-    body {
-        font-family: Arial;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 48px;
-    }
-
-    table {
-        border-collapse: collapse;
-        margin: 0 auto;
-    }
-
-    td, th {
-        border: 1px solid black;
-        width: 100px;
-        height: 80px;
-        font-size: 28px;
-    }
-
-    th {
-        background-color: #eee;
-    }
-
-    /* сірі (січень і березень) */
-    tbody tr:first-child td:nth-child(2),
-    tbody tr:first-child td:nth-child(3),
-    tbody tr:first-child td:nth-child(4),
-    tbody tr:first-child td:nth-child(5),
-    tbody tr:first-child td:nth-child(6),
-    tbody tr:first-child td:nth-child(7),
-    tbody tr:last-child  td:nth-child(8) {
-        color: gray;
-    }
-
-    /* вихідні */
-    tbody td:nth-child(2),
-    tbody td:nth-child(8) {
-        color: green;
-    }
-
-    /* святкові (наприклад 14 лютого) */
-    tbody tr:nth-child(3) td:nth-child(7) {
-        color: red;
-    }
-
-    /* день народження — 7 лютого */
-    tbody tr:nth-child(2) td:nth-child(7) {
-        background-color: yellow;
-        color: blue;
-        font-weight: bold;
-    }
-
-</style>
 </head>
-
 <body>
-
-<h1>February 2025</h1>
-
-<table>
-    <thead>
+    <font face="arial">
+    <table width="100%" border="0">
         <tr>
-            <th>No.</th>
-            <th>Sunday</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
+            <td align="right">
+                <font size="2">
+                    <a href="#">Gmail</a> &nbsp;&nbsp;
+                    <a href="#">Зображення</a> &nbsp;&nbsp;
+                    <img src="https://cdn-icons-png.flaticon.com/512/17/17704.png" width="16" height="16" valign="middle"> &nbsp;&nbsp;
+                    <span style="display: inline-block; background-color: #8f8f8f; border-radius: 50%; width: 32px; height: 32px; text-align: center; line-height: 32px; color: white; font-weight: bold; font-size: 18px; vertical-align: middle;">Є</span>
+                </font>
+            </td>
         </tr>
-    </thead>
-
-    <tbody>
+    </table>
+    
+    <br><br><br><br><br><br><br>
+    
+    <table width="100%">
         <tr>
-            <td>1</td>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-            <td>29</td>
-            <td>30</td>
-            <td>31</td>
-            <td>1</td>
+            <td align="center">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="270" height="90">
+                <br><br>
+                <form>
+                    <table>
+                        <tr>
+                            <td width="450">
+                                <input type="text" size="59">
+                                <img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" width="20" height="20" align="right">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="button" value="Пошук Google">
+                            </td>
+                            <td>
+                                <input type="button" value="Мені пощастить">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <p><font size="2">Сервіс Google доступний такими мовами: <a href="#">English</a></font></p>
+            </td>
         </tr>
-
+    </table>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <table width="100%" bgcolor="#f2f2f2">
         <tr>
-            <td>2</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
+            <td colspan="2">
+                <font color="#70757a" size="3">Україна</font>
+            </td>
         </tr>
-
         <tr>
-            <td>3</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
+            <td align="left">
+                <font size="2" color="#70757a">
+                    Про Google &nbsp;&nbsp;
+                    Реклама &nbsp;&nbsp;
+                    Для бізнесу &nbsp;&nbsp;
+                    Як працює Пошук
+                </font>
+            </td>
+            <td align="right">
+                <font size="2" color="#70757a">
+                    Конфіденційність &nbsp;&nbsp;
+                    Умови &nbsp;&nbsp;
+                    Налаштування
+                </font>
+            </td>
         </tr>
-
-        <tr>
-            <td>4</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-            <td>22</td>
-        </tr>
-
-        <tr>
-            <td>5</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-            <td>1</td>
-        </tr>
-    </tbody>
-
-</table>
-
+    </table>
+    </font>
 </body>
 </html>
+
