@@ -14,3 +14,10 @@ function openLabCard(card){
         card.style.borderBottomRightRadius = "0px";
     }
 }
+
+function changePreview(link, imagePath){
+    let block = link.closest(".labBlock");
+    let prevImg = block.querySelector(".labPreview");
+
+    prevImg.src = imagePath;
+}
