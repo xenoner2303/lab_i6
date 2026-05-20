@@ -1,0 +1,23 @@
+.backButton{
+    z-index: 1000;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    padding: 10px 20px;
+
+    display: inline-block;
+
+    background-color: rgba(250, 245, 215, 0.5);
+    border-radius: 30px;
+
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.backButton:hover{
+    background-color: rgb(250, 245, 215);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}

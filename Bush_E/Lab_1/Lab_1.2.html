@@ -52,212 +52,212 @@
         }
 
     </style>
+    <link type="text/css" rel="stylesheet" href="/mainStyles.css"/>
 </head>
 
 <body>
+    <a href="/StartPage/index.html" class="backButton">&#8592; Назад</a>
 
-<table border="1" id="board">
+    <table border="1" id="board">
+        <tr>
+            <td class="coords"></td>
+
+            <td class="coords">A</td>
+            <td class="coords">B</td>
+            <td class="coords">C</td>
+            <td class="coords">D</td>
+            <td class="coords">E</td>
+            <td class="coords">F</td>
+            <td class="coords">G</td>
+            <td class="coords">H</td>
+
+            <td class="coords"></td>
+        </tr>
+
+        <tr>
+            <td class="coords">8</td>
+
+            <td class="black">♜</td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white">♜</td>
+            <td class="black">♚</td>
+            <td class="white"></td>
+
+            <td class="coords">8</td>
+        </tr>
+
+        <tr>
+            <td class="coords">7</td>
+
+            <td class="white">♟</td>
+            <td class="black">♟</td>
+            <td class="white">♟</td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black">♟</td>
+            <td class="white">♟</td>
+            <td class="black">♟</td>
+
+            <td class="coords">7</td>
+        </tr>
+
+        <tr>
+            <td class="coords">6</td>
+
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black">♞</td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white">♘</td>
+            <td class="black"></td>
+            <td class="white"></td>
+
+            <td class="coords">6</td>
+        </tr>
+
+        <tr>
+            <td class="coords">5</td>
+
+            <td class="white"></td>
+            <td class="black">♛</td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white">♗</td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+
+            <td class="coords">5</td>
+        </tr>
+
+        <tr>
+            <td class="coords">4</td>
+
+            <td class="black"></td>
+            <td class="white">♙</td>
+            <td class="black"></td>
+            <td class="white">♙</td>
+            <td class="black">♗</td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+
+            <td class="coords">4</td>
+        </tr>
+
+        <tr>
+            <td class="coords">3</td>
+
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+
+            <td class="coords">3</td>
+        </tr>
+
+        <tr>
+            <td class="coords">2</td>
+
+            <td class="black">♙</td>
+            <td class="white"></td>
+            <td class="black">♙</td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white">♙</td>
+            <td class="black">♙</td>
+            <td class="white">♙</td>
+
+            <td class="coords">2</td>
+        </tr>
+
+        <tr>
+            <td class="coords">1</td>
+
+            <td class="white">♖</td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black">♕</td>
+            <td class="white">♔</td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black">♖</td>
+
+            <td class="coords">1</td>
+        </tr>
+
+        <tr>
+            <td class="coords"></td>
+
+            <td class="coords">A</td>
+            <td class="coords">B</td>
+            <td class="coords">C</td>
+            <td class="coords">D</td>
+            <td class="coords">E</td>
+            <td class="coords">F</td>
+            <td class="coords">G</td>
+            <td class="coords">H</td>
+
+            <td class="coords"></td>
+        </tr>
+
+    </table>
+
+    <script>
+
+        let selectedCell = null;
+
+        const cells = document.querySelectorAll("#board td");
+
+        cells.forEach(cell => {
+
+            if(cell.classList.contains("coords")){
+                return;
+            }
+
+            cell.addEventListener("click", function(){
 
 
-    <tr>
-        <td class="coords"></td>
+                if(selectedCell === null){
 
-        <td class="coords">A</td>
-        <td class="coords">B</td>
-        <td class="coords">C</td>
-        <td class="coords">D</td>
-        <td class="coords">E</td>
-        <td class="coords">F</td>
-        <td class="coords">G</td>
-        <td class="coords">H</td>
+                    if(cell.innerHTML.trim() !== ""){
 
-        <td class="coords"></td>
-    </tr>
+                        selectedCell = cell;
+                        cell.classList.add("selected");
+                    }
 
-    <tr>
-        <td class="coords">8</td>
+                }else{
 
-        <td class="black">♜</td>
-        <td class="white"></td>
-        <td class="black"></td>
-        <td class="white"></td>
-        <td class="black"></td>
-        <td class="white">♜</td>
-        <td class="black">♚</td>
-        <td class="white"></td>
+                    if(selectedCell === cell){
 
-        <td class="coords">8</td>
-    </tr>
+                        selectedCell.classList.remove("selected");
+                        selectedCell = null;
 
-    <tr>
-        <td class="coords">7</td>
+                        return;
+                    }
 
-        <td class="white">♟</td>
-        <td class="black">♟</td>
-        <td class="white">♟</td>
-        <td class="black"></td>
-        <td class="white"></td>
-        <td class="black">♟</td>
-        <td class="white">♟</td>
-        <td class="black">♟</td>
+                    cell.innerHTML = selectedCell.innerHTML;
 
-        <td class="coords">7</td>
-    </tr>
-
-    <tr>
-        <td class="coords">6</td>
-
-        <td class="black"></td>
-        <td class="white"></td>
-        <td class="black">♞</td>
-        <td class="white"></td>
-        <td class="black"></td>
-        <td class="white">♘</td>
-        <td class="black"></td>
-        <td class="white"></td>
-
-        <td class="coords">6</td>
-    </tr>
-
-    <tr>
-        <td class="coords">5</td>
-
-        <td class="white"></td>
-        <td class="black">♛</td>
-        <td class="white"></td>
-        <td class="black"></td>
-        <td class="white">♗</td>
-        <td class="black"></td>
-        <td class="white"></td>
-        <td class="black"></td>
-
-        <td class="coords">5</td>
-    </tr>
-
-    <tr>
-        <td class="coords">4</td>
-
-        <td class="black"></td>
-        <td class="white">♙</td>
-        <td class="black"></td>
-        <td class="white">♙</td>
-        <td class="black">♗</td>
-        <td class="white"></td>
-        <td class="black"></td>
-        <td class="white"></td>
-
-        <td class="coords">4</td>
-    </tr>
-
-    <tr>
-        <td class="coords">3</td>
-
-        <td class="white"></td>
-        <td class="black"></td>
-        <td class="white"></td>
-        <td class="black"></td>
-        <td class="white"></td>
-        <td class="black"></td>
-        <td class="white"></td>
-        <td class="black"></td>
-
-        <td class="coords">3</td>
-    </tr>
-
-    <tr>
-        <td class="coords">2</td>
-
-        <td class="black">♙</td>
-        <td class="white"></td>
-        <td class="black">♙</td>
-        <td class="white"></td>
-        <td class="black"></td>
-        <td class="white">♙</td>
-        <td class="black">♙</td>
-        <td class="white">♙</td>
-
-        <td class="coords">2</td>
-    </tr>
-
-    <tr>
-        <td class="coords">1</td>
-
-        <td class="white">♖</td>
-        <td class="black"></td>
-        <td class="white"></td>
-        <td class="black">♕</td>
-        <td class="white">♔</td>
-        <td class="black"></td>
-        <td class="white"></td>
-        <td class="black">♖</td>
-
-        <td class="coords">1</td>
-    </tr>
-
-    <tr>
-        <td class="coords"></td>
-
-        <td class="coords">A</td>
-        <td class="coords">B</td>
-        <td class="coords">C</td>
-        <td class="coords">D</td>
-        <td class="coords">E</td>
-        <td class="coords">F</td>
-        <td class="coords">G</td>
-        <td class="coords">H</td>
-
-        <td class="coords"></td>
-    </tr>
-
-</table>
-
-<script>
-
-    let selectedCell = null;
-
-    const cells = document.querySelectorAll("#board td");
-
-    cells.forEach(cell => {
-
-        if(cell.classList.contains("coords")){
-            return;
-        }
-
-        cell.addEventListener("click", function(){
-
-
-            if(selectedCell === null){
-
-                if(cell.innerHTML.trim() !== ""){
-
-                    selectedCell = cell;
-                    cell.classList.add("selected");
-                }
-
-            }else{
-
-                if(selectedCell === cell){
+                    selectedCell.innerHTML = "";
 
                     selectedCell.classList.remove("selected");
-                    selectedCell = null;
 
-                    return;
+                    selectedCell = null;
                 }
 
-                cell.innerHTML = selectedCell.innerHTML;
-
-                selectedCell.innerHTML = "";
-
-                selectedCell.classList.remove("selected");
-
-                selectedCell = null;
-            }
+            });
 
         });
 
-    });
-
-</script>
+    </script>
 
 </body>
 </html>
